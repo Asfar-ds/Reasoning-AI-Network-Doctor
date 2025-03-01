@@ -1,8 +1,11 @@
 import streamlit as st
 from googleapiclient.discovery import build
+import os
+from dotenv import load_dotenv
 
-# Replace with your YouTube API key
-API_KEY = 'AIzaSyBYiP-rX9t8AewgxfwnGsEk6G-yWPo-zXI'
+load_dotenv()
+# API key
+API_KEY = os.getenv('youtube_api_key')
 
 # Function to search YouTube videos
 def search_youtube_videos(query, max_results=5):
