@@ -40,6 +40,7 @@ prompts = PromptTemplate.from_template(
     "- If you need to 'think' before answering, summarize your thought process in **one short sentence** inside `<think>` tags.\n\n"
 
     "User's message: {question}"
+    'Give longest possible answer. Your answer should be very very long'
 )
 
 # Custom CSS for the "thinking" box
